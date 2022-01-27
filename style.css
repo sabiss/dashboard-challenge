@@ -1,0 +1,348 @@
+:root{
+    --tom-de-cinza: #9B989B;
+}
+body{
+    background-color: #dfdbdb;
+    display: flex;
+    height: 190vh;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+}
+/*ESTILIZAÇÃO DO CONTEUDO DENTRO DO ASIDE*/
+.nav-box{
+    background-color: #FFFFFF;
+    width: 80px;
+    height: 100%;
+}
+.nav-bar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.icones{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.icones img{
+    width: 32px;
+    padding: 20px;
+}
+.icones img:hover{
+    cursor: pointer;
+}
+.div-casa-borda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-left: 4px solid #9B989B;
+}
+.icone-perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid #9B989B;
+    padding-top: 20px;
+}
+.conteudo-box{
+    height: 100%;
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+}
+/*ESTILIZAÇÃO DO CONTEUDO DENTRO DA DIV CONTEUDO-BOX*/
+.header-mobile{
+    display: none;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#585555;
+    align-items: center;
+    padding: 30px 10px;
+}
+.header-mobile img{
+    width: 30px;
+}
+.header-mobile img:hover{
+    cursor: pointer;
+}
+.header-pc{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+    align-items: center;
+}  
+.header-pc h1{
+    margin-left: 70px;
+}
+.Hello{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:rgb(88, 85, 85);
+} 
+.container{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.idiomas{
+    background: transparent;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.buscar-box{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.loupe-icon{
+    width: 20px;
+    margin-right: 6px;
+}
+.loupe-icon:hover{
+    cursor: pointer;
+}
+#input-buscar{
+    border-radius: 20px;
+    height: 30px;
+    padding: 5px 8px;
+    border: none;
+    float: left;
+}
+.botao{
+    padding: 10px 30px;
+    background-color: #a7a6a7;
+    border-radius: 10px;
+    color: white;
+}
+.botao:hover{
+    background-color: #b1aeb1;
+    cursor: pointer;
+}
+.botao:active{
+    background-color: #808080;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+.blue-box_and_graphics{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.blue-box{
+    height: 20%;
+    width: 80%;
+    background-color: rgba(53, 167, 255, 0.2);
+    padding: 20px;
+    color: #868686;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.xis{
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.xis:hover{
+    cursor: pointer;
+}
+.graphics{
+    height: 60%;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.graphic-box{
+    width: 320px;
+    height: 100%;
+    background-color: white;
+}
+.grafico{
+    width: 100%;
+    height: 100%;
+}
+.tasks{
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+.titulo_e_botao{
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+.titulo-tasks{
+    padding: 0px 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:#585555;  
+}
+.botao-tasks{
+    text-transform: uppercase;
+    color: white;
+    background-color: #585555;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.botao-tasks:hover{
+    cursor: pointer;
+    background-color: #636060;
+}
+.botao-tasks:active{
+    background-color: #4e4e4e;
+}
+.titulo-tasks-tasks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+    color:#636060;
+}
+.tasks-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+    background-color: white;
+    margin:20px;
+    border-radius: 10px;
+    color: var(--tom-de-cinza)
+}
+.primeira{
+    margin-top: 10px;
+}
+.tasks-box__botao{
+    background-color: var(--tom-de-cinza);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.tasks-box__botao:hover{
+    cursor: pointer;
+    background-color: #a3a0a3;
+}
+.tasks-box__botao:active{
+    background-color: #7c7c7c;
+}
+footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:#585555;
+}
+@media screen and (max-width:500px){
+    aside{
+        display: none;
+    }
+    .container{
+        display: none;
+    }
+    .header-pc{
+        display: none;
+    }
+    .header-mobile{
+        display: flex;
+    }
+    .conteudo-box{
+        width: 100%;
+    }
+    .graphics{
+        flex-direction: column;
+        width: 95%;
+        
+    }
+    .blue-box_and_graphics{
+        height: auto;
+        justify-content: space-around;
+    }
+    .graphic-box{
+        width: 300px;
+        margin-top: 50px;
+    }
+    .titulo_e_botao {
+        justify-content: space-around;
+    }
+    .titulo-tasks{
+        padding: 0px;
+    }
+    .tasks{
+        height: auto;
+    }
+    .tasks-box{
+        height: 200px;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer{
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width:501px){
+    aside{
+        display: none;
+    }
+    .container{
+        display: none;
+    }
+    .header-pc{
+        display: none;
+    }
+    .header-mobile{
+        display: flex;
+    }
+    .conteudo-box{
+        width: 100%;
+    }
+    .graphics{
+        flex-direction: column;
+        width: 95%;
+        
+    }
+    .blue-box_and_graphics{
+        height: auto;
+        justify-content: space-around;
+    }
+    .graphic-box{
+        width: 400px;
+        margin-top: 50px;
+    }
+    .titulo_e_botao {
+        justify-content: space-around;
+    }
+    .titulo-tasks{
+        padding: 0px;
+    }
+    .tasks{
+        height: auto;
+    }
+    .tasks-box{
+        height: 200px;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer{
+        font-size: 1rem;
+    }
+}
