@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "reset.css">
+    <link rel = "stylesheet" href = "style.css">
+    <!-------------------------------------------------------------Google Fonts------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap" rel="stylesheet">
+    <!--------------------------------------------------------ChartsJS-------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <aside class = "nav-box">
+        <nav class = "nav-bar">
+            <div class = "icones">
+                <img src="img/menu-hamburguer.png" alt="menu">
+                <img src="img/icons8-mais-50.png" alt = "Símbolo de mais">  
+                <div class="div-casa-borda"><img src="img/icons8-house-50.png" alt="icone de casa"></div>
+                <img src="img/icons8-layout-50.png" alt="icone de layout">
+                <img src="img/icons8-lamp-50.png" alt="icone de lâmpada">
+                <img src="img/icons8-gráfico-de-pizza-50.png" alt="icone de gráfico de pizza">
+                <img src="img/icons8-flag-50.png" alt="ícone de bandeira">
+                <img src="img/icons8-ponto-de-interrogação-50.png" alt="ícone de ponto de interrogação">
+            </div>
+            <div class = "icone-perfil">
+                <img src="img/icons8-usuário-homem-com-círculo-50.png" alt="ícone de usuário">
+            </div>
+        </nav>
+    </aside>
+    <div class = "conteudo-box">
+        <header class = "header-pc">
+            <h1 class = "Hello">Welcome Andrew!</h1>
+            <div class = "container">
+                <select class = "idiomas">
+                    <option>PT</option>
+                    <option>ES</option>
+                    <option>EN</option>
+                </select>
+
+                <div class = "buscar-box">
+                    <input type = "text" id = "input-buscar" placeholder="Search">
+                    <img src="img/icons8-loupe-32.png" class = "loupe-icon">
+                </div>
+
+                <div class = "botao">
+                    <p>New+</p>
+                </div>
+                
+            </div>
+        </header>
+        <header class = "header-mobile">
+            <img src="img/menu-hamburguer.png" alt="menu">
+            <h1>Welcome Andrew!</h1>
+            <img src="img/icons8-loupe-32.png" class = "loupe-icon">
+        </header>
+        <main>
+            <div class = "blue-box_and_graphics">
+                <div class = "blue-box">
+                    <div class = "textos">
+                        <h2>John Doe has been promoted to "Team Lead". Congratulate him!</h2>
+                        <p>Charles Lee, 12th Feb, 10 am</p>
+                    </div>
+                    <div class = "xis">
+                        <p>X</p>
+                    </div>
+                </div>
+                <div class = "graphics">
+                    <div class = "graphic-box">
+                        <canvas id="bar" width="100%" height="90%"></canvas>
+                    </div>
+                    <div class = "graphic-box">
+                        <canvas id="bar-stacked" width="100%" height="90%"></canvas>
+                    </div>
+                    <div class = "graphic-box">
+                        <canvas id="pie" width="320" height="250"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class = "tasks">
+                <div class = "titulo_e_botao">
+                    <h2 class = "titulo-tasks">My Tasks</h2>
+                    <p class = "botao-tasks">+ add new</p>
+                </div>
+                <div class = "titulo-tasks-tasks">
+                    <p>Type</p>
+                    <p>Name</p>
+                    <p>Due Date</p>
+                    <p>Action Required</p>
+                </div>
+                <div class = "tasks-box primeira">
+                    <img src="img/tasks-icons/icons8-lamp-32.png" alt = "ícone de lâmpada">
+                    <p>Save Paper</p>
+                    <p>- 3days</p>
+                    <p>Idea is pending for your approval</p>
+                    <p class = "tasks-box__botao">Approve Now</p>
+                </div>
+                <div class = "tasks-box">
+                    <img src="img/tasks-icons/icons8-cardiogram-32.png" alt = "Ícone com as linhas de um eletrocargiograma">
+                    <p>Production Cost</p>
+                    <p>- 2days</p>
+                    <p>Monthly forecast submission delayed</p>
+                    <p class = "tasks-box__botao">Submit Now</p>
+                </div>
+                <div class = "tasks-box">
+                    <img src="img/tasks-icons/icons8-lamp-32.png" alt = "ícone de lâmpada">
+                    <p>Revenue Management</p>
+                    <p>- 1days</p>
+                    <p>Idea is pending for your approval</p>
+                    <p class = "tasks-box__botao">Approve Now</p>
+                </div>
+                <div class = "tasks-box">
+                    <img src="img/tasks-icons/icons8-cardiogram-32.png" alt = "Ícone com as linhas de um eletrocargiograma">
+                    <p>Save Paper</p>
+                    <p>Today</p>
+                    <p>Move Idea to IL4</p>
+                    <p class = "tasks-box__botao">Move Now</p>
+                </div>
+                <div class = "tasks-box">
+                    <img src="img/tasks-icons/icons8-cardiogram-32.png" alt = "Ícone com as linhas de um eletrocargiograma">
+                    <p>Save Paper</p>
+                    <p>+ 3days</p>
+                    <p>Update changes to basic details</p>
+                    <p class = "tasks-box__botao">Update Now</p>
+                </div>
+                <div class = "tasks-box">
+                    <img src="img/tasks-icons/icons8-cardiogram-32.png" alt = "Ícone com as linhas de um eletrocargiograma">
+                    <p>Save Paper</p>
+                    <p>+ 3days</p>
+                    <p>Update changes to basic details</p>
+                    <p class = "tasks-box__botao">Update Now</p>
+                </div>
+
+                <footer>
+                    <h2>Mothly Task Overview</h2>
+                    <p>Feb 2019 < ></p>
+                </footer>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
