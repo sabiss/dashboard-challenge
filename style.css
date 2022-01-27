@@ -418,7 +418,7 @@ footer{
         font-size: 1.3rem;
     }
 }
-@media only screen and (min-width: 901px) and (max-width: 1299px){
+@media only screen and (min-width: 901px) and (max-width: 1200px){
     aside{
         display: none;
     }
@@ -477,9 +477,20 @@ footer{
         font-size: 1.3rem;
     }
 }
-@media only screen and (min-width: 1300px) and (max-width:1399px){
+@media only screen and (min-width: 1201px) and (max-width:1399px){
     body{
         height: 194vh;
+    }
+    .blue-box{
+        margin-bottom: 20px;
+    }
+    .graphics{
+        height: 70%;
+    }
+    .graphic-box{
+        width: 300px;
+        display: flex;
+        align-items: center;
     }
     .ultima{
         margin-bottom: 0px;
