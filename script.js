@@ -109,3 +109,16 @@ const GRAFICO_PIE = new Chart(GRAFICO_PIE_LOCAL, {
         }
     }
 })
+let contador = 0
+function abrir_menu(){
+    const CAMINHO_MENU = document.querySelector("div.menu-mobile")
+    if(contador == 0){
+        CAMINHO_MENU.style.display = 'flex';
+        contador++
+    }
+    else{
+        CAMINHO_MENU.style.display = 'none';
+        contador=0
+    }
+    console.log(contador)
+}
