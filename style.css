@@ -9,6 +9,20 @@ body{
     font-family: 'Outfit', sans-serif;
 }
 /*ESTILIZAÇÃO DO CONTEUDO DENTRO DO ASIDE*/
+.menu-mobile{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80px;
+    height: 80%;
+    position: absolute;
+    background-color: white;
+    left: 0px;
+    top: 90px;
+    border-right: 4px solid var(--tom-de-cinza);
+    border-bottom: 4px solid var(--tom-de-cinza);
+}
 .nav-box{
     background-color: #FFFFFF;
     width: 80px;
@@ -252,7 +266,7 @@ footer{
     font-weight: bold;
     color:#585555;
 }
-@media screen and (max-width:500px){
+@media only screen and (max-width:500px){
     aside{
         display: none;
     }
@@ -299,7 +313,7 @@ footer{
         font-size: 1rem;
     }
 }
-@media only screen and (min-width:501px){
+@media only screen and (min-width:501px) and (max-width:700px){
     aside{
         display: none;
     }
@@ -312,13 +326,16 @@ footer{
     .header-mobile{
         display: flex;
     }
+    .menu-mobile{
+        width: 100px;
+        left:30px;
+    }
     .conteudo-box{
         width: 100%;
     }
     .graphics{
         flex-direction: column;
         width: 95%;
-        
     }
     .blue-box_and_graphics{
         height: auto;
@@ -344,5 +361,277 @@ footer{
     }
     footer{
         font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 701px) and (max-width: 900px){
+    aside{
+        display: none;
+    }
+    .container{
+        display: none;
+    }
+    .header-pc{
+        display: none;
+    }
+    .header-mobile{
+        display: flex;
+        font-size: 1.6rem;
+    }
+    .menu-mobile{
+        width: 100px;
+        left:30px;
+    }   
+    .header-mobile img{
+        width: 40px;
+    }
+    .conteudo-box{
+        width: 100%;
+    }
+    .graphics{
+        flex-direction: column;
+        width: 95%;
+    }
+    .blue-box_and_graphics{
+        height: auto;
+        justify-content: space-around;
+    }
+    .graphic-box{
+        width: 500px;
+        margin-top: 50px;
+    }
+    .titulo_e_botao {
+        justify-content: space-around;
+    }
+    .titulo-tasks{
+        padding: 0px;
+    }
+    .tasks{
+        height: auto;
+    }
+    .tasks-box{
+        height: 200px;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    footer{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 1299px){
+    aside{
+        display: none;
+    }
+    .container{
+        display: none;
+    }
+    .header-pc{
+        display: none;
+    }
+    .header-mobile{
+        display: flex;
+        font-size: 1.6rem;
+    }
+    .header-mobile img{
+        width: 40px;
+    }
+    .menu-mobile{
+        width: 110px;
+        left:80px;
+    } 
+    .conteudo-box{
+        width: 100%;
+    }
+    .graphics{
+        flex-direction: column;
+        width: 95%;
+    }
+    .blue-box_and_graphics{
+        height: auto;
+        justify-content: space-around;
+    }
+    .graphic-box{
+        width: 500px;
+        margin-top: 50px;
+    }
+    
+    .titulo_e_botao {
+        justify-content: space-around;
+    }
+    .titulo-tasks{
+        padding: 0px;
+    }
+    .titulo-tasks-tasks{
+        font-size: 1.2rem;
+    }
+    .tasks{
+        height: auto;
+    }
+    .tasks-box{
+        height: 200px;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    footer{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (min-width: 1300px) and (max-width:1399px){
+    body{
+        height: 194vh;
+    }
+    .ultima{
+        margin-bottom: 0px;
+    }
+    .tasks{
+        height: auto;
+    }
+    footer{
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width:1600px) and (max-width:1750px){
+    .tasks-box{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (min-width:1751px) and (max-width: 2099px){
+    .tasks-box{
+        font-size: 1.3rem;
+    }
+    .container, #input-buscar{
+        font-size: 1.2rem;
+    }
+    .tasks{
+        height: 33vh;
+    }
+    body{
+        height: 163vh;
+    }
+    .titulo_e_botao{
+        margin: 15px;
+    }
+    .graphic-box{
+        width: 400px;
+        margin-top: 50px;
+    }
+    .titulo-tasks-tasks{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (min-width:2100px) and (max-width: 2199px){
+    .tasks-box{
+        font-size: 1.3rem;
+    }
+    .container, #input-buscar{
+        font-size: 1.2rem;
+    }
+    .tasks{
+        height: 33vh;
+    }
+    body{
+        height: 163vh;
+    }
+    .titulo_e_botao{
+        margin: 15px;
+    }
+    .graphic-box{
+        width: 500px;
+        margin-top: 50px;
+    }
+    .titulo-tasks-tasks{
+        font-size: 1.4rem;
+    }
+    .icones img{
+        width: 50px;
+    }
+    .blue-box{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:2200px) and (max-width: 2999px){
+    .tasks-box{
+        font-size: 1.3rem;
+    }
+    .container, #input-buscar{
+        font-size: 1.2rem;
+    }
+    .tasks{
+        height: 33vh;
+    }
+    .tasks-box{
+        font-size: 1.5rem;
+    }
+    body{
+        height: 163vh;
+    }
+    .titulo_e_botao{
+        margin: 15px;
+    }
+    .graphic-box{
+        width: 500px;
+        margin-top: 50px;
+    }
+    .titulo-tasks-tasks{
+        font-size: 1.4rem;
+    }
+    .blue-box{
+        font-size: 1.5rem;
+    }   
+    .idiomas{
+        font-size: 1.3rem;
+    }
+    .icones img{
+        width: 50px;
+    }
+    footer{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width: 3000px){
+    .Hello{
+        font-size: 2rem;
+    }
+    .tasks-box{
+        font-size: 1.3rem;
+    }
+    .container, #input-buscar{
+        font-size: 1.8rem;
+    }
+    .tasks{
+        height: 33vh;
+    }
+    .tasks-box{
+        font-size: 1.8rem;
+    }
+    body{
+        height: 163vh;
+    }
+    .titulo_e_botao{
+        margin: 15px;
+    }
+    .titulo-tasks, .botao-tasks{
+        font-size: 1.8rem;
+    }
+
+    .graphic-box{
+        width: 700px;
+        margin-top: 50px;
+    }
+    .titulo-tasks-tasks{
+        font-size: 2rem;
+    }
+    .blue-box{
+        font-size: 2rem;
+    }   
+    .idiomas{
+        font-size: 1.5rem;
+    }
+    .icones img{
+        width: 50px;
+    }
+    footer{
+        font-size: 1.8rem;
     }
 }
