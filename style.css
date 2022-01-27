@@ -23,6 +23,9 @@ body{
     border-right: 4px solid var(--tom-de-cinza);
     border-bottom: 4px solid var(--tom-de-cinza);
 }
+.menu-hamburguer-mobile{
+    padding: 13px;
+}
 .nav-box{
     background-color: #FFFFFF;
     width: 80px;
