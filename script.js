@@ -132,7 +132,7 @@ function fechar(){//remove da tela a notificação da caixa azul
 
 function interacao_pesquisa(){//interações de abrir e fechar a barra de pesquisa nos dispositivos mobile
     var CAMINHO_PESQUISA_SHADOW = document.querySelector("div.pesquisa-shadow")
-    var CAMINHO_LUPA_PESQUISA_MOBILE = document.querySelector("img.loupe-icon-responsive")
+    var CAMINHO_INPUT_PESQUISA = document.querySelector("input#input-buscar-mobile")
 
     if(contador == 0){
         CAMINHO_PESQUISA_SHADOW.style.display = 'flex';
@@ -141,6 +141,6 @@ function interacao_pesquisa(){//interações de abrir e fechar a barra de pesqui
     else{
         CAMINHO_PESQUISA_SHADOW.style.display = 'none';
         contador=0
+        CAMINHO_INPUT_PESQUISA.value = "";
     }
-    console.log(contador)
 }
