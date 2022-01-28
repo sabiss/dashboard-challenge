@@ -53,10 +53,11 @@
                 
             </div>
         </header>
+        <!--CONFIGURANÇOES MOBILE-->
         <header class = "header-mobile">
             <img src="img/menu-hamburguer.png" alt="menu" onclick="abrir_menu()" class="menu-hamburguer-mobile">
             <h1>Welcome Andrew!</h1>
-            <img src="img/icons8-loupe-32.png" class = "loupe-icon">
+            <img src="img/icons8-loupe-32.png" class = "loupe-icon" onclick="interacao_pesquisa()">
             <div class ="menu-mobile">  
                 <img src="img/icons8-mais-50.png" alt = "Símbolo de mais">  
                 <div class="div-casa-borda"><img src="img/icons8-house-50.png" alt="icone de casa"></div>
@@ -67,6 +68,12 @@
                 <img src="img/icons8-ponto-de-interrogação-50.png" alt="ícone de ponto de interrogação">
             </div>
         </header>
+        <div class = "pesquisa-shadow" onclick="interacao_pesquisa()">
+            <div class = "pesquisa-box">
+                <input type = "text"  id = "input-buscar-mobile" placeholder="Search">
+                <img src="img/icons8-loupe-20.png" class = "loupe-icon-responsive" onclick="interacao_pesquisa()">
+            </div>
+        </div>
         <main>
             <div class = "blue-box_and_graphics">
                 <div class = "blue-box">
@@ -75,7 +82,7 @@
                         <p>Charles Lee, 12th Feb, 10 am</p>
                     </div>
                     <div class = "xis">
-                        <p>X</p>
+                        <p onclick="fechar()">X</p>
                     </div>
                 </div>
                 <div class = "graphics">
