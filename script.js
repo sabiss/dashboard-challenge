@@ -131,7 +131,6 @@ function fechar(){//remove da tela a notificação da caixa azul
 }
 
 function interacao_pesquisa(){//interações de abrir e fechar a barra de pesquisa nos dispositivos mobile
-    var CAMINHO_LUPA_HEADER = document.querySelector("img.loupe-icon")
     var CAMINHO_PESQUISA_SHADOW = document.querySelector("div.pesquisa-shadow")
     var CAMINHO_LUPA_PESQUISA_MOBILE = document.querySelector("img.loupe-icon-responsive")
 
