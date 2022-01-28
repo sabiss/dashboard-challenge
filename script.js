@@ -109,6 +109,8 @@ var GRAFICO_PIE = new Chart(GRAFICO_PIE_LOCAL, {
         }
     }
 })
+
+//EVENTOS
 let contador = 0
 function abrir_menu(){
     var CAMINHO_MENU = document.querySelector("div.menu-mobile")
