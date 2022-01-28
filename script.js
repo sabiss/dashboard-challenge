@@ -122,3 +122,24 @@ function abrir_menu(){
     }
     console.log(contador)
 }
+
+function fechar(){
+    const CAMINHO_NOTIFICACAO = document.querySelector("div.blue-box")
+    CAMINHO_NOTIFICACAO.style.display ='none';
+}
+
+function interacao_pesquisa(){
+    const CAMINHO_LUPA_HEADER = document.querySelector("img.loupe-icon")
+    const CAMINHO_PESQUISA_SHADOW = document.querySelector("div.pesquisa-shadow")
+    const CAMINHO_LUPA_PESQUISA_MOBILE = document.querySelector("img.loupe-icon-responsive")
+
+    if(contador == 0){
+        CAMINHO_PESQUISA_SHADOW.style.display = 'flex';
+        contador++
+    }
+    else{
+        CAMINHO_PESQUISA_SHADOW.style.display = 'none';
+        contador=0
+    }
+    console.log(contador)
+}
