@@ -112,7 +112,7 @@ var GRAFICO_PIE = new Chart(GRAFICO_PIE_LOCAL, {
 
 //EVENTOS
 let contador = 0
-function abrir_menu(){
+function abrir_menu(){//abre e fecha o menu nos dispositivos mobile
     var CAMINHO_MENU = document.querySelector("div.menu-mobile")
     if(contador == 0){
         CAMINHO_MENU.style.display = 'flex';
@@ -125,12 +125,12 @@ function abrir_menu(){
     console.log(contador)
 }
 
-function fechar(){
+function fechar(){//remove da tela a notificação da caixa azul
     var CAMINHO_NOTIFICACAO = document.querySelector("div.blue-box")
     CAMINHO_NOTIFICACAO.style.display ='none';
 }
 
-function interacao_pesquisa(){
+function interacao_pesquisa(){//interações de abrir e fechar a barra de pesquisa nos dispositivos mobile
     var CAMINHO_LUPA_HEADER = document.querySelector("img.loupe-icon")
     var CAMINHO_PESQUISA_SHADOW = document.querySelector("div.pesquisa-shadow")
     var CAMINHO_LUPA_PESQUISA_MOBILE = document.querySelector("img.loupe-icon-responsive")
