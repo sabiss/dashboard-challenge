@@ -1,6 +1,6 @@
 //Gráfico de barras normal
-const GRAFICO_BARRA_LOCAL = document.querySelector("canvas#bar")
-const GRAFICO_BARRA = new Chart(GRAFICO_BARRA_LOCAL,{
+var GRAFICO_BARRA_LOCAL = document.querySelector("canvas#bar")
+var GRAFICO_BARRA = new Chart(GRAFICO_BARRA_LOCAL,{
     type:'bar',
     data:{
         labels:["IL0", "IL1", "IL2", "IL3", "IL4"],
@@ -31,8 +31,8 @@ const GRAFICO_BARRA = new Chart(GRAFICO_BARRA_LOCAL,{
 })
 
 //Gráfico de barras stacked
-const GRAFICO_BARRA_STACKED_LOCAL = document.querySelector("canvas#bar-stacked")
-const GRAFICO_BARRA_STACKED = new Chart(GRAFICO_BARRA_STACKED_LOCAL, {
+var GRAFICO_BARRA_STACKED_LOCAL = document.querySelector("canvas#bar-stacked")
+var GRAFICO_BARRA_STACKED = new Chart(GRAFICO_BARRA_STACKED_LOCAL, {
     type:'bar',
     data:{
         labels:["Others", "APAC", "EMEA", "NE"],
@@ -82,8 +82,8 @@ const GRAFICO_BARRA_STACKED = new Chart(GRAFICO_BARRA_STACKED_LOCAL, {
     }
 })
 //Gráfico de doughnut
-const GRAFICO_PIE_LOCAL = document.querySelector("canvas#pie")
-const GRAFICO_PIE = new Chart(GRAFICO_PIE_LOCAL, {
+var GRAFICO_PIE_LOCAL = document.querySelector("canvas#pie")
+var GRAFICO_PIE = new Chart(GRAFICO_PIE_LOCAL, {
     type:'doughnut',
     data:{
         labels:["APAC", "EMEA", "NE", "OTHERS"],
@@ -111,7 +111,7 @@ const GRAFICO_PIE = new Chart(GRAFICO_PIE_LOCAL, {
 })
 let contador = 0
 function abrir_menu(){
-    const CAMINHO_MENU = document.querySelector("div.menu-mobile")
+    var CAMINHO_MENU = document.querySelector("div.menu-mobile")
     if(contador == 0){
         CAMINHO_MENU.style.display = 'flex';
         contador++
@@ -124,14 +124,14 @@ function abrir_menu(){
 }
 
 function fechar(){
-    const CAMINHO_NOTIFICACAO = document.querySelector("div.blue-box")
+    var CAMINHO_NOTIFICACAO = document.querySelector("div.blue-box")
     CAMINHO_NOTIFICACAO.style.display ='none';
 }
 
 function interacao_pesquisa(){
-    const CAMINHO_LUPA_HEADER = document.querySelector("img.loupe-icon")
-    const CAMINHO_PESQUISA_SHADOW = document.querySelector("div.pesquisa-shadow")
-    const CAMINHO_LUPA_PESQUISA_MOBILE = document.querySelector("img.loupe-icon-responsive")
+    var CAMINHO_LUPA_HEADER = document.querySelector("img.loupe-icon")
+    var CAMINHO_PESQUISA_SHADOW = document.querySelector("div.pesquisa-shadow")
+    var CAMINHO_LUPA_PESQUISA_MOBILE = document.querySelector("img.loupe-icon-responsive")
 
     if(contador == 0){
         CAMINHO_PESQUISA_SHADOW.style.display = 'flex';
